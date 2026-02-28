@@ -1,0 +1,269 @@
+/* ===================================================
+   GLOBAL THEME
+=================================================== */
+
+body {
+    transition: background 0.4s ease, color 0.4s ease;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+/* LIGHT MODE */
+body.light-mode {
+    background: #ffffff;
+    color: #111;
+}
+
+/* DARK MODE */
+body.dark-mode {
+    background: #0f172a;
+    color: #f1f5f9;
+}
+
+/* ================= NAVBAR ================= */
+.custom-navbar {
+    /* Remove transparent */
+    background-color: #ffffff; /* light mode default */
+    padding: 13px 0;
+    transition: 0.4s ease;
+}
+
+/* NAV LINKS */
+.custom-navbar .nav-link {
+    position: relative;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* LIGHT MODE NAVBAR */
+body.light-mode .custom-navbar {
+    background-color: #ffffff; /* solid light */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .custom-navbar .nav-link {
+    color: #111;
+}
+
+body.light-mode .custom-navbar .nav-link:hover {
+    color: #0d6efd;
+}
+
+/* DARK MODE NAVBAR */
+body.dark-mode .custom-navbar {
+    background-color: #1e293b; /* solid dark */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .custom-navbar .nav-link {
+    color: #f1f5f9;
+}
+
+body.dark-mode .custom-navbar .nav-link:hover {
+    color: #38bdf8;
+}
+
+/* Underline Hover */
+.nav-animate::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #0d6efd;
+    transition: 0.3s ease;
+}
+
+.nav-animate:hover::after {
+    width: 100%;
+}
+
+/* BRAND LOGO */
+.brand-logo {
+    font-size: 24px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+body.light-mode .brand-logo {
+    color: #0d6efd;
+}
+
+body.dark-mode .brand-logo {
+    color: #00d4ff;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05);
+}
+
+/* TOGGLE BUTTON */
+.toggle-btn {
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+/* ================= HERO ================= */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Hero Gradient Background */
+.light-mode .hero-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9f2ff);
+}
+
+.dark-mode .hero-section {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Hero Name Highlight */
+.hero-name {
+    background: linear-gradient(45deg, #0d6efd, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hero Description */
+.hero-description {
+    max-width: 650px;
+    margin: 20px auto 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Typing Text */
+.typing-text {
+    font-weight: 600;
+    letter-spacing: 1px;
+    min-height: 40px;
+}
+
+/* Buttons */
+.glow-btn {
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.glow-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+}
+
+/* Outline Button Theme Fix */
+.light-mode .btn-outline-light {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.light-mode .btn-outline-light:hover {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.dark-mode .btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+
+.dark-mode .btn-outline-light:hover {
+    background: #fff;
+    color: #111;
+}
+
+/* ================= FOOTER ================= */
+.footer-section {
+    background-color: #111;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.footer-nav li {
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.footer-nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background: #0d6efd;
+    transition: 0.3s ease;
+}
+
+.footer-nav a:hover::after {
+    width: 100%;
+}
+
+/* Footer Contact */
+.footer-contact a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* ================= BACK TO TOP ================= */
+#topBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    border: none;
+    background: #0d6efd;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#topBtn:hover {
+    background: #084298;
+    transform: scale(1.1);
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 20px;
+    }
+    .hero-description {
+        font-size: 0.95rem;
+    }
+}

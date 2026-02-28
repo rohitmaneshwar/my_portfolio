@@ -1,0 +1,299 @@
+/* ===================================================
+   SECTIONS
+=================================================== */
+
+/* Section Titles */
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    transition: 0.3s ease;
+}
+
+.light-mode .section-title {
+    color: #0d6efd;
+}
+
+.dark-mode .section-title {
+    color: #00d4ff;
+}
+
+/* NAVBAR SCROLL EFFECT */
+.nav-scrolled {
+    padding: 10px 0;
+    transition: 0.4s ease;
+}
+
+/* Light Mode scroll shadow */
+body.light-mode .nav-scrolled {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode scroll shadow */
+body.dark-mode .nav-scrolled {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* HERO PROFILE IMAGE */
+.hero-profile-img {
+    width: 150px;      /* size */
+    height: 160px;
+    border-radius: 50%; /* circle shape */
+    object-fit: cover;  /* crop to fit */
+    border: 4px solid #0d6efd; /* border color */
+    transition: transform 0.3s ease;
+}
+
+.hero-profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Dark mode border fix */
+body.dark-mode .hero-profile-img {
+    border-color: #00d4ff;
+}
+
+/* About Card */
+.about-card {
+    max-width: 900px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.light-mode .about-card {
+    background-color: #fff;
+    color: #111;
+}
+
+.dark-mode .about-card {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+.about-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* Hover Effect */
+.about-card:hover {
+    border-color: #0d6efd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+/* ================= SKILLS & PROJECT CARD ================= */
+.project-style-card {
+    padding: 30px;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.light-mode .project-style-card {
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.light-mode .project-style-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(13, 110, 253, 0.25);
+}
+
+.dark-mode .project-style-card {
+    background: #1e293b;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .project-style-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(56, 189, 248, 0.3);
+}
+
+/* Headings & Lists */
+.project-style-card h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.project-style-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-style-card ul li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Project Links */
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.light-mode .project-link {
+    color: #0d6efd;
+}
+
+.dark-mode .project-link {
+    color: #38bdf8;
+}
+
+.project-link:hover {
+    letter-spacing: 1px;
+}
+
+/* ================= CONTACT ================= */
+.contact-card {
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Form Inputs */
+.custom-input {
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    transition: 0.3s ease;
+    outline: none;
+}
+
+.light-mode .custom-input {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #111;
+}
+
+.light-mode .custom-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.2);
+}
+
+.dark-mode .custom-input {
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: #f1f5f9;
+}
+
+.dark-mode .custom-input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+/* ================= FOOTER ================= */
+.footer-section {
+    background-color: #111;
+    padding: 30px 0;
+    transition: 0.4s ease;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: #f1f5f9; /* default text color */
+}
+
+/* Footer Navigation */
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-nav li {
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    position: relative;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: #f1f5f9; /* ensure visible */
+}
+
+/* Footer Nav Underline Hover */
+.footer-nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background: #0d6efd;
+    transition: 0.3s ease;
+}
+
+.footer-nav a:hover::after {
+    width: 100%;
+}
+
+/* Footer Contact */
+.footer-contact {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #f1f5f9; /* ensure visible */
+}
+
+.footer-contact a {
+    text-decoration: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: #0d6efd; /* link color */
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright */
+.footer-section p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* Dark Mode Fix */
+body.dark-mode .footer-section {
+    background-color: #111;
+    color: #f1f5f9;
+}
+
+body.dark-mode .footer-nav a {
+    color: #f1f5f9;
+}
+
+body.dark-mode .footer-nav a:hover::after {
+    background: #00d4ff;
+}
+
+body.dark-mode .footer-contact a {
+    color: #38bdf8;
+}
+
+body.dark-mode .footer-contact a:hover {
+    text-decoration: underline;
+}

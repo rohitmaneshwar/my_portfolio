@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rohit Maneshwar | Front-End Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Global & Component CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="light-mode">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold brand-logo" href="#">Rohit.dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link nav-animate" href="#header">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-animate" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-animate" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link nav-animate" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link nav-animate" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-3">
+                        <button id="themeToggle" class="btn btn-sm toggle-btn">🌙</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section id="header" class="hero-section d-flex align-items-center">
+        <div class="container text-center" data-aos="fade-up">
+            <!-- Profile Image -->
+             <img src="images/profile.jpg" alt="Rohit Maneshwar" class="hero-profile-img mb-3">
+            <h1 class="display-4 fw-bold">
+                Hi, I'm <span class="hero-name">Rohit Maneshwar</span>
+            </h1>
+            <h2 class="typing-text mt-3">Front-End Web Developer</h2>
+            <p class="mt-4 hero-description">
+                I design modern, responsive, user-friendly web interfaces using <strong>HTML, CSS, Bootstrap,
+                    JavaScript</strong>
+                and expanding into <strong>Backend with Python, Flask & REST APIs</strong>.
+            </p>
+            <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#projects" class="btn btn-primary btn-lg glow-btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">About Me</h2>
+            <div class="about-card mx-auto">
+                <p>I am a Front-End Developer specializing in responsive & interactive user interfaces. I focus on
+                    performance, clean design, and user experience.</p>
+                <p>Currently expanding into Backend Development with Python, Flask, DBMS & REST APIs to build full-stack
+                    applications.</p>
+                <p>My goal is to manage both client-side & server-side development efficiently as a Full-Stack
+                    Developer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Front-End focused developer, expanding towards Full-Stack.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="skill-card project-style-card h-100">
+                        <h4>Front-End Development</h4>
+                        <ul>
+                            <li>HTML5 - Semantic & structured layouts</li>
+                            <li>CSS3 - Responsive design, Flexbox, Grid</li>
+                            <li>JavaScript - Interactive UI & DOM control</li>
+                            <li>Bootstrap - Mobile-first development</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill-card project-style-card h-100">
+                        <h4>Backend Development (Learning)</h4>
+                        <ul>
+                            <li>Python - Backend logic building</li>
+                            <li>Flask - RESTful web apps</li>
+                            <li>DBMS / SQL - Database management</li>
+                            <li>REST API - API integration & data flow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Practical implementations of my front-end and backend learning.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="project-card project-style-card h-100">
+                        <h4>Responsive Portfolio Website</h4>
+                        <p>A modern personal portfolio built using HTML, CSS, JavaScript, Bootstrap with dark/light mode
+                            and smooth animations.</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card project-style-card h-100">
+                        <h4>Flask Authentication System</h4>
+                        <p>Backend login & registration system using Python, Flask, SQL DB, password hashing & session
+                            management.</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Let's build something amazing together.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="contact-card project-style-card h-100">
+                        <h4>Get In Touch</h4>
+                        <p>I'm available for Front-End and Junior Full-Stack opportunities.</p>
+                        <ul class="contact-info">
+                            <li><strong>Email:</strong> rohitmaneshwar12@gmail.com</li>
+                            <li><strong>Location:</strong> India</li>
+                            <li><strong>Role:</strong> Front-End Developer</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="contact-card project-style-card h-100">
+                        <h4>Send Message</h4>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control custom-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control custom-input" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea rows="4" class="form-control custom-input" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary glow-btn w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+<footer class="footer-section py-4">
+    <div class="container text-center">
+
+        <!-- Navigation Links -->
+        <ul class="footer-nav mb-3">
+            <li><a class="nav-animate" href="#header">Home</a></li>
+            <li><a class="nav-animate" href="#about">About</a></li>
+            <li><a class="nav-animate" href="#skills">Skills</a></li>
+            <li><a class="nav-animate" href="#projects">Projects</a></li>
+            <li><a class="nav-animate" href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Contact Info -->
+        <p class="footer-contact mb-2">
+            Email: <a href="mailto:rohitmaneshwar12@gmail.com">rohitmaneshwar12@gmail.com</a> |
+            Mobile: <a href="tel:+916266595429">+91 6266595429</a>
+        </p>
+
+        <!-- Copyright -->
+        <p class="mb-0">© 2026 Rohit Maneshwar</p>
+
+    </div>
+</footer>
+
+    <!-- Back To Top -->
+    <button id="topBtn">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
